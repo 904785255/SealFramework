@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:OnePartner/OnePartner/OnePartner.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SealFramework.xcodeproj">
    </FileRef>
    <FileRef

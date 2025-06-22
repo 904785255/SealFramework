@@ -1,0 +1,24 @@
+{
+  "originHash" : "a73b4abacd87cef578f02cde05dbe590823110b4b469ac2e16bb5b8e4da14a22",
+  "pins" : [
+    {
+      "identity" : "reercodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/reers/ReerCodable.git",
+      "state" : {
+        "revision" : "574c22916e3e7b3896e47b0bbc2f560478fffecd",
+        "version" : "1.2.6"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

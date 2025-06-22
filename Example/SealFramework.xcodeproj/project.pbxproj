@@ -40,9 +40,9 @@
 		607FACE51AFB9204008FA782 /* SealFramework_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SealFramework_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		878C3B157B882E0D5925E785 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		96BBE55504C5C1E8C4418E2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B0688ED600E07238CB2F66B6 /* SealFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SealFramework.podspec; path = ../SealFramework.podspec; sourceTree = "<group>"; };
+		878C3B157B882E0D5925E785 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		96BBE55504C5C1E8C4418E2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B0688ED600E07238CB2F66B6 /* SealFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SealFramework.podspec; path = ../SealFramework.podspec; sourceTree = "<group>"; };
 		DE1683334414826094F57133 /* Pods_SealFramework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SealFramework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A07D420B9D615FFF51F173 /* Pods-SealFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-SealFramework_Example/Pods-SealFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC182494A0F679AE1DD88DD6 /* Pods-SealFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-SealFramework_Example/Pods-SealFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +147,6 @@
 				596CE2BE8014C83A67EFC369 /* Pods-SealFramework_Tests.debug.xcconfig */,
 				F00F13482AA85E675CDB08DC /* Pods-SealFramework_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,10 +226,13 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
