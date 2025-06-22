@@ -1,0 +1,16 @@
+PODS:
+  - SealFramework (0.1.0)
+
+DEPENDENCIES:
+  - SealFramework (from `../`)
+
+EXTERNAL SOURCES:
+  SealFramework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SealFramework: 9b1220072a502d031ada0a4c0bbf9e902976ba6f
+
+PODFILE CHECKSUM: f30534bcfc178a3ae810e15db6d18c2206aed6a7
+
+COCOAPODS: 1.16.2

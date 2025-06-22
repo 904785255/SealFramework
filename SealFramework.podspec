@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-
-  s.homepage         = 'https://github.com/Seal/SealFramework'
+                       
+  s.homepage         = 'https://github.com/904785255/SealFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Seal' => '904785255@qq.com' }
-  s.source           = { :git => 'https://github.com/Seal/SealFramework.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/904785255/SealFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
