@@ -10,10 +10,20 @@ let package = Package(
 
     ],
     dependencies: [
-            .package(url: "https://github.com/reers/ReerCodable.git", from: "1.2.6")
+        .package(url: "https://github.com/reers/ReerCodable.git", from: "1.2.6"),
+        .package(url: "https://github.com/evgenyneu/keychain-swift", branch: "master"),
+        .package(url: "https://github.com/apple/swift-collections.git", .upToNextMajor(from: "1.0.4")),
+
     ],
     targets: [
-      
+        .target(
+            name: "AppAccount",
+            dependencies: [
+                "Models",
+                .product(name: "KeychainSwift", package: "keychain-swift"),
+                .product(name: "Collections", package: "swift-collections")
+            ]
+        ),
         .target(
             name: "Models",dependencies:[
                 .product(name: "ReerCodable", package: "ReerCodable"),

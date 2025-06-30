@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct OnePartnerApp: App {
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    
+    init() {
+        
+    }
+    
+    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
+            
         }
     }
 }
