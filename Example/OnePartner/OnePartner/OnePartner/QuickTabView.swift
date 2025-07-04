@@ -18,10 +18,10 @@ enum Tab: Int, CaseIterable, Identifiable, Hashable {
     }
     
     var title: String {
-        return ""
+        return "title"
     }
     var iconName: String {
-        return ""
+        return "house"
     }
     var iconSelectedName: String {
         "\(iconName)-fill"
@@ -55,4 +55,67 @@ struct QuickTabView: View {
             }
         }
     }
+}
+
+struct CustomerTabView: View {
+    @State private var selectedTab: Tab = .home
+    
+    @State private var tabBarHeight: CGFloat = 60
+
+    private var tabBarView: some View {
+        HStack {
+            ForEach(Tab.allCases) { item in
+                Button {
+                    withAnimation(.easeOut(duration: 0.2)) {
+                        selectedTab = item
+                    }
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: item.iconName)
+                            .symbolVariant(.fill)
+                            .font(.body.bold())
+                            .frame(width: 44, height: 29)
+                        Text(item.title)
+                            .font(.caption2)
+                            .lineLimit(1)
+                    }.frame(maxWidth: .infinity)
+                }.foregroundColor(selectedTab == item ? .blue : .secondary)
+            }
+        }
+        .padding(.horizontal,15)
+        
+    }
+    
+    init() {
+    }
+    var body: some View {
+        GeometryReader { geometry in
+            let screenHeight   = geometry.size.height
+            let safeAreaBottom = geometry.safeAreaInsets.bottom
+            Group {
+                switch selectedTab {
+                case .home:
+                    Text("home")
+                default:
+                    Text("Hello World")
+                        .padding(20)
+                        .overlay(
+                            Color.blue
+                                .frame(width: 100, height: 100),
+                            alignment: .center
+                        )
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .safeAreaInset(edge: .bottom) {
+                tabBarView.background(.ultraThinMaterial)
+            }
+            .onAppear {
+            }
+        }
+    }
+}
+
+#Preview {
+    CustomerTabView()
 }

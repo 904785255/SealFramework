@@ -1,11 +1,43 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
+# Import CocoaPods sources
+#source 'https://github.com/CocoaPods/Specs.git'
+inhibit_all_warnings!
+install! 'cocoapods', :disable_input_output_paths => true
+
+
+# Basic
+def basic_pods
+  #页面ui查看
+  pod 'LookinServer'
+  pod 'Then'
+
+end
+
+#加载本地仓库
+def basic_location
+  pod 'SealFramework', :path => '../'
+end
+
+#rx及扩展库
+def rx_pods
+  #语法糖
+end
+
+
+# Testing
+def test_pods
+end
+
+
+#以下是一个workspace=SealFramework对应多个target配置
+workspace 'SealFramework'
 
 target 'SealFramework_Example' do
-  pod 'SealFramework', :path => '../'
 
-  
+  basic_location
+  basic_pods
   target 'SealFramework_Tests' do
     inherit! :search_paths
 
@@ -14,3 +46,10 @@ target 'SealFramework_Example' do
   end
 end
 
+
+## OnePartner项目
+target 'OnePartner' do
+project 'OnePartner/OnePartner/OnePartner.xcodeproj’
+
+
+end

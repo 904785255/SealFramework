@@ -7,7 +7,7 @@ let package = Package(
     name: "Packages",
     products: [
         .singleTargetLibrary("Models"),
-
+        .singleTargetLibrary("AppAccount"),
     ],
     dependencies: [
         .package(url: "https://github.com/reers/ReerCodable.git", from: "1.2.6"),

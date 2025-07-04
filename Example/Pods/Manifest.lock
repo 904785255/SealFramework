@@ -1,16 +1,29 @@
 PODS:
+  - LookinServer (1.2.8):
+    - LookinServer/Core (= 1.2.8)
+  - LookinServer/Core (1.2.8)
   - SealFramework (0.1.0)
+  - Then (3.0.0)
 
 DEPENDENCIES:
+  - LookinServer
   - SealFramework (from `../`)
+  - Then
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
+    - Then
 
 EXTERNAL SOURCES:
   SealFramework:
     :path: "../"
 
 SPEC CHECKSUMS:
+  LookinServer: 1b2b61c6402ae29fa22182d48f5cd067b4e99e80
   SealFramework: a4fce9856cfe97eb84e6d2e1cd19f5ae7e42d58d
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 81381388a8a4d4bad8d1f64c874328485a68c262
+PODFILE CHECKSUM: d1e4996cb7b3502ebc03fd51b6e5c5a0ab522983
 
 COCOAPODS: 1.16.2
