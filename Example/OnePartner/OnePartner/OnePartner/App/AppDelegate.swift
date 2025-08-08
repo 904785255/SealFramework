@@ -8,10 +8,13 @@
 import Foundation
 import UIKit
 import UserNotifications
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
     let notificationHandler = NotificationHandler()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         print("AppDelegate-didFinishLaunchingWithOptions")
+
+        
 
         return true
     }

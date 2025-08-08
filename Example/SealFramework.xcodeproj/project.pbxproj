@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2574201F33757381F078B7DF /* Pods_SealFramework_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1683334414826094F57133 /* Pods_SealFramework_Tests.framework */; };
+		19A938AE64D4376840D74F68 /* libPods-SealFramework_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C76945E81D323D521B258A6 /* libPods-SealFramework_Tests.a */; };
+		43C4AE97A6DB0E05B8CF39F5 /* libPods-SealFramework_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80FC397EAA3F692F4984D454 /* libPods-SealFramework_Example.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		9842FA02186E0826A6E74122 /* Pods_SealFramework_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256A176330222047293BFF40 /* Pods_SealFramework_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		256A176330222047293BFF40 /* Pods_SealFramework_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SealFramework_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		596CE2BE8014C83A67EFC369 /* Pods-SealFramework_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealFramework_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SealFramework_Tests/Pods-SealFramework_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SealFramework_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SealFramework_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,10 +39,11 @@
 		607FACE51AFB9204008FA782 /* SealFramework_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SealFramework_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		80FC397EAA3F692F4984D454 /* libPods-SealFramework_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SealFramework_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		878C3B157B882E0D5925E785 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		96BBE55504C5C1E8C4418E2E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C76945E81D323D521B258A6 /* libPods-SealFramework_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SealFramework_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0688ED600E07238CB2F66B6 /* SealFramework.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SealFramework.podspec; path = ../SealFramework.podspec; sourceTree = "<group>"; };
-		DE1683334414826094F57133 /* Pods_SealFramework_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SealFramework_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A07D420B9D615FFF51F173 /* Pods-SealFramework_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealFramework_Example.release.xcconfig"; path = "Target Support Files/Pods-SealFramework_Example/Pods-SealFramework_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC182494A0F679AE1DD88DD6 /* Pods-SealFramework_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealFramework_Example.debug.xcconfig"; path = "Target Support Files/Pods-SealFramework_Example/Pods-SealFramework_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F00F13482AA85E675CDB08DC /* Pods-SealFramework_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SealFramework_Tests.release.xcconfig"; path = "Target Support Files/Pods-SealFramework_Tests/Pods-SealFramework_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9842FA02186E0826A6E74122 /* Pods_SealFramework_Example.framework in Frameworks */,
+				43C4AE97A6DB0E05B8CF39F5 /* libPods-SealFramework_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2574201F33757381F078B7DF /* Pods_SealFramework_Tests.framework in Frameworks */,
+				19A938AE64D4376840D74F68 /* libPods-SealFramework_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +153,8 @@
 		EDBF4EA174188E53F995FE00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				256A176330222047293BFF40 /* Pods_SealFramework_Example.framework */,
-				DE1683334414826094F57133 /* Pods_SealFramework_Tests.framework */,
+				80FC397EAA3F692F4984D454 /* libPods-SealFramework_Example.a */,
+				9C76945E81D323D521B258A6 /* libPods-SealFramework_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,7 +170,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				B07A5DB2569B0E4D9FA44B3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,21 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B07A5DB2569B0E4D9FA44B3C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SealFramework_Example/Pods-SealFramework_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -476,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SealFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -491,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SealFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

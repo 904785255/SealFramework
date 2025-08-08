@@ -106,6 +106,9 @@ struct CustomerTabView: View {
                         )
                 }
             }
+            .transition(.blurReplace)
+            .animation(.easeInOut, value: selectedTab)
+
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .safeAreaInset(edge: .bottom) {
                 tabBarView.background(.ultraThinMaterial)
@@ -119,3 +122,5 @@ struct CustomerTabView: View {
 #Preview {
     CustomerTabView()
 }
+
+

@@ -21,6 +21,7 @@ class NetworkMonitor: ObservableObject {
         monitor.cancel()
     }
     init() {
+        _ = "网络监听"
         monitor.pathUpdateHandler = { [weak self] path in
             DispatchQueue.main.async {
                 self?.isConnected = path.status == .satisfied

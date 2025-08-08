@@ -22,14 +22,11 @@ struct OnePartnerApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(quickActionSettings)
-            
-
         }
         .onChange(of: phase) { (phaseValue) in
             switch phaseValue {
             case .active:
                 print("App: -> .active")
-
                 print("快捷入口")
                 guard let actionName = shortcutItemToProcess?.type as? String else { return }
                 quickActionSettings.quickAction = actionName
@@ -44,3 +41,16 @@ struct OnePartnerApp: App {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

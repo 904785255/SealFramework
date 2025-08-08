@@ -1,4 +1,4 @@
-framework module SealFramework {
+module SealFramework {
   umbrella header "SealFramework-umbrella.h"
 
   export *

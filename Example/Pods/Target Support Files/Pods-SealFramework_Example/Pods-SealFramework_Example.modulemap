@@ -1,4 +1,4 @@
-framework module Pods_SealFramework_Example {
+module Pods_SealFramework_Example {
   umbrella header "Pods-SealFramework_Example-umbrella.h"
 
   export *

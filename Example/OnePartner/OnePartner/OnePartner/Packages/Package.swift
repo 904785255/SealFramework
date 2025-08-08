@@ -5,15 +5,19 @@ import PackageDescription
 
 let package = Package(
     name: "Packages",
+    platforms: [
+      .iOS(.v17),
+    ],
     products: [
         .singleTargetLibrary("Models"),
         .singleTargetLibrary("AppAccount"),
+        .singleTargetLibrary("NetworkingManger"),
+
     ],
     dependencies: [
         .package(url: "https://github.com/reers/ReerCodable.git", from: "1.2.6"),
         .package(url: "https://github.com/evgenyneu/keychain-swift", branch: "master"),
         .package(url: "https://github.com/apple/swift-collections.git", .upToNextMajor(from: "1.0.4")),
-
     ],
     targets: [
         .target(
@@ -25,9 +29,19 @@ let package = Package(
             ]
         ),
         .target(
-            name: "Models",dependencies:[
+            name: "Models",
+            dependencies:[
                 .product(name: "ReerCodable", package: "ReerCodable"),
-            ]),
+            ]
+        ),
+        
+        .target(
+            name: "NetworkingManger",
+            dependencies:[
+                .product(name: "ReerCodable", package: "ReerCodable"),
+
+            ]
+        ),
 
     ]
 )
