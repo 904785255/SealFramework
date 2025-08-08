@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
-
+import NetworkingInterface
 @main
 struct OnePartnerApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @Environment(\.scenePhase) var phase
     
     @StateObject private var quickActionSettings = QuickActionSettings()
+
+    let NetMonitor = NetworkMonitor()
 
     init() {
         

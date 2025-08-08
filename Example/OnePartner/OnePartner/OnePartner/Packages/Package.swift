@@ -11,11 +11,11 @@ let package = Package(
     products: [
         .singleTargetLibrary("Models"),
         .singleTargetLibrary("AppAccount"),
-        .singleTargetLibrary("NetworkingManger"),
+        .singleTargetLibrary("NetworkingInterface"),
 
     ],
     dependencies: [
-        .package(url: "https://github.com/reers/ReerCodable.git", from: "1.2.6"),
+        .package(url: "https://github.com/reers/ReerCodable.git", from: "1.3.1"),
         .package(url: "https://github.com/evgenyneu/keychain-swift", branch: "master"),
         .package(url: "https://github.com/apple/swift-collections.git", .upToNextMajor(from: "1.0.4")),
     ],
@@ -36,7 +36,7 @@ let package = Package(
         ),
         
         .target(
-            name: "NetworkingManger",
+            name: "NetworkingInterface",
             dependencies:[
                 .product(name: "ReerCodable", package: "ReerCodable"),
 

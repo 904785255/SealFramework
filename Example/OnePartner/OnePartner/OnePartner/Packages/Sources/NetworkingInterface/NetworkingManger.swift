@@ -12,7 +12,7 @@ import Combine
 
 public protocol NetworkingProtocol: RequestProtocol, ResponseProtocol {}
 extension NetworkingProtocol {
-    public func performRequest<T: Codable>(model: T.Type) -> AnyPublisher<T, NetworkError> {
+    public func performRequest<T: Codable>(model: T.Type) -> AnyPublisher<Mresponse<T>, NetworkError> {
         let isConnected = true
         guard isConnected else {
             return Fail(error: .noConnetion).eraseToAnyPublisher()
@@ -33,6 +33,8 @@ extension NetworkingProtocol {
                 }
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                    print("json=\(json)")
+
                     let code = json?["code"].map(String.init(describing:)) ?? ""
                     if self.code.contains(code) {
                         return data
@@ -43,7 +45,7 @@ extension NetworkingProtocol {
                     throw NetworkError.decodingFailed(error)
                 }
             }
-            .decode(type: T.self, decoder: decoder)
+            .decode(type: Mresponse<T>.self, decoder: decoder)
             .mapError { error -> NetworkError in
                 if let networkError = error as? NetworkError {
                     return networkError

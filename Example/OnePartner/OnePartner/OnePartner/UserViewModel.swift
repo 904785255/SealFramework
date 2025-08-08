@@ -7,7 +7,7 @@
 
 import Foundation
 import Combine
-import NetworkingManger
+
 class UserViewModel: ObservableObject {
     @Published var users: [User] = []
     @Published var isLoading = false

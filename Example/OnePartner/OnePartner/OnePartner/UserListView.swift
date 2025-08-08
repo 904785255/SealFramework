@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import NetworkingInterface
 
 struct UserListView: View {
     @StateObject var viewModel = UserViewModel()

@@ -6,4 +6,4 @@
 //
 
 import Foundation
-@_exported import NetworkingManger
+@_exported import NetworkingInterface

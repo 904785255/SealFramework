@@ -24,9 +24,8 @@
 		6609A0162E17BD1A00025781 /* ExportedFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609A0152E17BD1A00025781 /* ExportedFiles.swift */; };
 		6618D5822E44AF6000F5F38C /* AppAccount in Frameworks */ = {isa = PBXBuildFile; productRef = 6618D5812E44AF6000F5F38C /* AppAccount */; };
 		6618D5842E44AF6000F5F38C /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 6618D5832E44AF6000F5F38C /* Models */; };
-		6618D6D02E45940500F5F38C /* NetworkingManger in Frameworks */ = {isa = PBXBuildFile; productRef = 6618D6CF2E45940500F5F38C /* NetworkingManger */; };
 		6618D7142E45C79B00F5F38C /* exporteds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6618D7132E45C79B00F5F38C /* exporteds.swift */; };
-		668DBC062E1BC24500460E1B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DBC022E1BC24500460E1B /* NetworkMonitor.swift */; };
+		664FBD5E2E45EA75007BB683 /* NetworkingInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 664FBD5D2E45EA75007BB683 /* NetworkingInterface */; };
 		A6E0A7144E988F480D90EFBA /* libPods-OnePartner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B88328555137538A4547337 /* libPods-OnePartner.a */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +67,6 @@
 		6609A0152E17BD1A00025781 /* ExportedFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportedFiles.swift; sourceTree = "<group>"; };
 		6618D5802E44AF2F00F5F38C /* Packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Packages; sourceTree = "<group>"; };
 		6618D7132E45C79B00F5F38C /* exporteds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exporteds.swift; sourceTree = "<group>"; };
-		668DBC022E1BC24500460E1B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		9C0AE614BE1EA178B0368376 /* Pods-OnePartner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnePartner.release.xcconfig"; path = "Target Support Files/Pods-OnePartner/Pods-OnePartner.release.xcconfig"; sourceTree = "<group>"; };
 		BEBDFE1F2E084D95000295BC /* OnePartner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnePartner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBDFE2F2E084D97000295BC /* OnePartnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnePartnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,9 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664FBD5E2E45EA75007BB683 /* NetworkingInterface in Frameworks */,
 				6618D5842E44AF6000F5F38C /* Models in Frameworks */,
 				6618D5822E44AF6000F5F38C /* AppAccount in Frameworks */,
-				6618D6D02E45940500F5F38C /* NetworkingManger in Frameworks */,
 				A6E0A7144E988F480D90EFBA /* libPods-OnePartner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,19 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				6618D5802E44AF2F00F5F38C /* Packages */,
+				66099F4C2E176C1E00025781 /* Assets.xcassets */,
+				6609A0152E17BD1A00025781 /* ExportedFiles.swift */,
 				66099F492E176C1E00025781 /* App */,
 				66099F4B2E176C1E00025781 /* Preview Content */,
-				66099F4C2E176C1E00025781 /* Assets.xcassets */,
-				66099F4D2E176C1E00025781 /* ContentView.swift */,
-				6609A0152E17BD1A00025781 /* ExportedFiles.swift */,
 				66099F4E2E176C1E00025781 /* Info.plist */,
 				66099F512E176C1E00025781 /* QuickActionSettings.swift */,
 				66099F522E176C1E00025781 /* QuickTabView.swift */,
+				66099F4D2E176C1E00025781 /* ContentView.swift */,
 				66099F532E176C1E00025781 /* Router.swift */,
 				66099F6E2E177F3100025781 /* UserViewModel.swift */,
 				66099F702E177F5A00025781 /* UserListView.swift */,
 				6618D7132E45C79B00F5F38C /* exporteds.swift */,
-				668DBC032E1BC24500460E1B /* Network */,
 			);
 			path = OnePartner;
 			sourceTree = "<group>";
@@ -166,14 +163,6 @@
 				66099F662E176C2C00025781 /* OnePartnerTests.swift */,
 			);
 			path = OnePartnerTests;
-			sourceTree = "<group>";
-		};
-		668DBC032E1BC24500460E1B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				668DBC022E1BC24500460E1B /* NetworkMonitor.swift */,
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		BEBDFE162E084D95000295BC = {
@@ -365,7 +354,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				66099F592E176C1E00025781 /* AppDelegate.swift in Sources */,
-				668DBC062E1BC24500460E1B /* NetworkMonitor.swift in Sources */,
 				6618D7142E45C79B00F5F38C /* exporteds.swift in Sources */,
 				66099F6F2E177F3100025781 /* UserViewModel.swift in Sources */,
 				6609A0162E17BD1A00025781 /* ExportedFiles.swift in Sources */,
@@ -557,6 +545,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swiftui.ket.OnePartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -588,6 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = swiftui.ket.OnePartner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -711,9 +701,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = Models;
 		};
-		6618D6CF2E45940500F5F38C /* NetworkingManger */ = {
+		664FBD5D2E45EA75007BB683 /* NetworkingInterface */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = NetworkingManger;
+			productName = NetworkingInterface;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -9,11 +9,20 @@ import SwiftUI
 
 import Models
 import Foundation
-
+import ReerCodable
 struct User: Codable, Identifiable {
     let id: Int
     let name: String
 }
+
+struct FaceAuthData: Codable, Identifiable {
+    let id: String
+    let title: String
+
+   
+}
+
+
 public struct Networking {
     static let shared:Networking = Networking()
 
@@ -35,11 +44,11 @@ extension Networking.Component : NetworkingProtocol{
         return "/api/privacy/code/face"
     }
     
-    public var method: NetworkingManger.HttpMethod {
+    public var method: HttpMethod {
         return .get
     }
     
-    public var parameter: NetworkingManger.HttpParameters? {
+    public var parameter: HttpParameters? {
         return ["lang":"zh_HK","tenant":"hk"]
     }
     
@@ -53,38 +62,20 @@ struct ContentView: View {
     @StateObject var router = Router()
     
     init() {
-        Networking.Component.path.performRequest(model: User.self).sink { completion in
+        Networking.Component.path.performRequest(model: FaceAuthData.self).sink { completion in
             switch completion {
             case .failure(let error):
-                
+                print("00-0-----error=\(error)")
                 break
             case .finished:
-                print("00-0-----")
-
+                print("00-0-----finished")
                 break
             }
         } receiveValue: { users in
+            print("00-0--users---\(users.data?.title)")
             DispatchQueue.main.async {
             }
         }.store(in: &cancellables)
-        
-        
-        
-//        let string = "https://clioapp.chinalife.com.hk/api/privacy/code/face"
-//        
-//        let parameter = ["lang":"zh_HK","tenant":"hk"]
-//        ApiService().fetch(User.self, string: string,method:.get,parameters: parameter)
-//            .receive(on: DispatchQueue.main)
-//            .sink(receiveCompletion: { completion in
-//
-//                if case .failure(let error) = completion {
-//                }
-//            }, receiveValue: { users in
-//
-//            })
-//            .store(in: &cancellables)
-//        
-        
     }
     var body: some View {
         if #available(iOS 16.0, *) {
