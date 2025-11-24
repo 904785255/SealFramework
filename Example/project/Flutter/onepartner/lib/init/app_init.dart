@@ -2,29 +2,16 @@
 import 'package:onepartner/library_import.dart';
 import 'package:onepartner/page/error_page.dart';
 
-import 'package:onepartner/config/dependencies.dart';
-import 'application.dart';
+import 'package:onepartner/provider/provider.dart';
+import 'package:onepartner/init/application.dart';
 
 class AppInit {
   static void main(){
     catchException((){
-      run();
+      WidgetsFlutterBinding.ensureInitialized();
+      runApp(Application());
     });
   }
-  static void run(){
-    WidgetsFlutterBinding.ensureInitialized();
-    runApp(
-      MultiProvider(
-        providers: Dependencies.providersLocal,
-        child: Application(),
-      ),
-    );
-
-
-
-
-  }
-
   static void catchException<T>(T callback()){
     FlutterError.onError = (FlutterErrorDetails details) {
       reportErrorAndLog(details);

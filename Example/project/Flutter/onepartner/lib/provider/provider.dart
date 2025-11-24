@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:onepartner/init/application.dart';
+import 'package:onepartner/provider/app_providers.dart';
 import 'package:provider/provider.dart';
 
 class Store {
   static final Store _instance = Store._internal();
   factory Store() => _instance;
   Store._internal();
-  static init(Widget child){
-    return MultiProvider(
-      providers: [
 
-      ],
-      child: child,
+  Widget buildApp(){
+    return MultiProvider(
+      providers: Dependencies.providersLocal,
+      child: Application(),
     );
   }
+
   static void dispose(){
 
   }
